@@ -72,6 +72,7 @@ fun CalculatorApp() {
 
             Button(
                 onClick = {
+                    // for division by zero
                     try {
                         result = (firstValue.toInt() / secondValue.toInt()).toString()
                     } catch (e: ArithmeticException){
